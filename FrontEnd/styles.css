@@ -1,9 +1,26 @@
+@import url(https://db.onlinewebfonts.com/c/5cfbe76f00e7c4d6ba5d963f6c179606?family=Museo+W01+700);
+
+@font-face {
+    font-family: "Museo 700";
+    src: url("https://db.onlinewebfonts.com/t/5cfbe76f00e7c4d6ba5d963f6c179606.eot");
+    src: url("https://db.onlinewebfonts.com/t/5cfbe76f00e7c4d6ba5d963f6c179606.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/5cfbe76f00e7c4d6ba5d963f6c179606.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/5cfbe76f00e7c4d6ba5d963f6c179606.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/5cfbe76f00e7c4d6ba5d963f6c179606.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/5cfbe76f00e7c4d6ba5d963f6c179606.svg#Museo W01 700")format("svg");
+}
+
 * {
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Museo 700';
+    }
+
+
+body::-webkit-scrollbar {
+    display: none;                   /* For Chrome, Safari, and Opera */
 }
 
 /* First Section */
@@ -32,6 +49,7 @@
     padding:10px;
     color: aliceblue;
     list-style-type: none;
+    transition:weight 1s 2s;
     font-size: 19px;
 }
 
@@ -39,6 +57,7 @@
     background-color: rgba(255, 255, 255, 0.8);
     font-size: large;
     border-radius: 2px;
+    transition-duration:5ms;
 }
 
 .vertical-header img {
@@ -81,8 +100,42 @@
     line-height: 20px;
 }
 
+
+
 .column img {
     width:350px;
     height: auto;
     padding-bottom: 30px;
+}
+
+/* Section 3 */
+
+
+.S3container {
+    display: flex;
+    gap: 50px;
+    padding: 100px 0px;
+    padding-left: 60px;
+}
+
+.S3box {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden
+}
+
+.S3box img {
+    width: 400px;
+    height: 250px;
+    border-radius: 1px;
+}
+
+.S3box p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
 }

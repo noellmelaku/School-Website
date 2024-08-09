@@ -65,6 +65,12 @@ body::-webkit-scrollbar {
     width: auto;
 }
 
+.vertical-header button {
+    all: initial;
+    color:white;
+    font-size:21px;
+}
+
 .first-page .school-name {
     position:absolute;
     color:aliceblue;
@@ -113,9 +119,9 @@ body::-webkit-scrollbar {
 
 .S3container {
     display: flex;
-    gap: 50px;
+    gap: 35px;
     padding: 100px 0px;
-    padding-left: 60px;
+    padding-left: 80px;
 }
 
 .S3box {
@@ -123,6 +129,7 @@ body::-webkit-scrollbar {
     border: 1px solid #ddd;
     border-radius: 1px;
     max-width: 350px;
+    height: 380px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     overflow: hidden
@@ -130,12 +137,13 @@ body::-webkit-scrollbar {
 
 .S3box img {
     width: 400px;
-    height: 250px;
+    height: 300px;
     border-radius: 1px;
 }
 
 .S3box p {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 35px;
     color: #333;
+    text-decoration: underline solid black 41px;
 }

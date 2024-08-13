@@ -4,7 +4,7 @@
   "description": "A website made by Noel, Adam, and Raees",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tailwindcss -i ./src/input.css -o ./FrontEnd/tailStyles.css --watch"
   },
   "keywords": [],
   "author": "",

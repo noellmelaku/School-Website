@@ -23,13 +23,17 @@ body::-webkit-scrollbar {
     display: none;                   /* For Chrome, Safari, and Opera */
 }
 
-/* First Section */
+                                /* First Section */
 
 .header {
     width: 100%;
     height: 250px;
     position:relative;
     display:inline-block;
+}
+
+.school-name {
+    font-size:500px;
 }
 
 .wallpaper {
@@ -49,15 +53,17 @@ body::-webkit-scrollbar {
     padding:10px;
     color: aliceblue;
     list-style-type: none;
-    transition:weight 1s 2s;
     font-size: 19px;
+    transition-duration: 500ms;
 }
-
+.vertical-header p {
+    font-size:20px;
+}
 .vertical-header li:hover {
     background-color: rgba(255, 255, 255, 0.8);
     font-size: large;
     border-radius: 2px;
-    transition-duration:5ms;
+    transition: transform 10s;
 }
 
 .vertical-header img {
@@ -81,7 +87,7 @@ body::-webkit-scrollbar {
     height:auto;
 }
 
-/* Second Section */
+                                /* Second Section */
 
 .origin-title {
     padding-top: 80px;
@@ -93,8 +99,10 @@ body::-webkit-scrollbar {
 .column-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px; 
+    gap: 0px; 
     padding-bottom: 30px;
+    width: 90vw;
+    margin-left:5%;
 }
 
 .column {
@@ -104,46 +112,111 @@ body::-webkit-scrollbar {
     font-size: 14px;
     margin:40px;
     line-height: 20px;
+    gap:20;
 }
 
-
-
 .column img {
-    width:350px;
-    height: auto;
+    width:80vh;
     padding-bottom: 30px;
 }
 
-/* Section 3 */
-
+                                /* Third Section */
 
 .S3container {
     display: flex;
     gap: 35px;
-    padding: 100px 0px;
-    padding-left: 80px;
+    padding: 100px 0;
+    padding-left: 10px;
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.S3headings {
+    display: flex;
+    gap:200px;
+    font-size:40px; 
+    width:220vh;
+    justify-content: center;
+    left:60px;
+}
+
+.S3headings:hover {
+    transition: transform 0.2s;
+}
+
+.S3container h1 {
+    display:relative;
 }
 
 .S3box {
     background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 1px;
     max-width: 350px;
-    height: 380px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    overflow: hidden
+    height: 300px;
+    text-align: left;
+    overflow: hidden;
+    position: relative; 
 }
 
 .S3box img {
-    width: 400px;
+    width: 100%;
     height: 300px;
-    border-radius: 1px;
+    border-radius: 3px;
+    position: relative;
+    display: block;
+    margin: auto;
 }
 
-.S3box p {
-    margin-top: 10px;
-    font-size: 35px;
-    color: #333;
-    text-decoration: underline solid black 41px;
+.S3content {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding-top:240px;
+    padding-right: 4px;
+    box-sizing: border-box; 
+    opacity: 0;
+    transition: opacity 0.3s;
 }
+
+.S3content p {
+    font-size: 34px;
+    color: #fff;
+    transform-origin: center right; 
+    margin: 0; 
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.S3box:hover {
+    transform:skew(0,1deg);
+    box-shadow: 9px 9px 11px 7px #cdcdcd;
+}
+
+.S3box:hover .S3content {
+    opacity: 1;
+}
+
+.roundedLineContainer{
+    display: flex;
+    gap:155px;
+    font-size:40px; 
+    width:220vh;
+    justify-content: center;
+    left:60px;
+    margin-top: 4px;
+}
+.roundedLine {
+    background-color: black;
+    border-radius: 40px;
+    width:240px;
+    height: 15px;;
+}
+

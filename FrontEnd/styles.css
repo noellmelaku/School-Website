@@ -152,6 +152,8 @@ body::-webkit-scrollbar {
 
 
                               /* Third Section */
+
+
 .thirdSection {
     margin-top: 80px;
     display: flex;
@@ -164,9 +166,12 @@ body::-webkit-scrollbar {
     width:25%;
     height:500px;
     position: relative;
+    overflow: hidden;
+    cursor: pointer;
     margin-top: 15%;
     z-index: 2;
 }
+
 .imageContainer img {
     width:100%;
     height: 500px;
@@ -201,6 +206,16 @@ body::-webkit-scrollbar {
     background-color:#6b9aa4;
     margin: 15px auto 0 auto;
 }
+.ani {
+    display: inline-block;
+    position: relative;
+    transform: translateY(90%);
+    transition: all 1.5s ease;
+}
+.imageContainer:hover .ani {
+    transform:translateY(0);
+}
+
 
                         /* Fourth Section*/
 
@@ -374,3 +389,5 @@ div.footerDesc > img:first-of-type {
     height:90px;
     width: auto;
 }
+
+/* Key Frames*/

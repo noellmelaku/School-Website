@@ -210,7 +210,7 @@ body::-webkit-scrollbar {
     display: inline-block;
     position: relative;
     transform: translateY(90%);
-    transition: all 1.5s ease;
+    transition: all 1.2s ease;
 }
 .imageContainer:hover .ani {
     transform:translateY(0);

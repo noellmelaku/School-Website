@@ -1,0 +1,393 @@
+@import url(https://db.onlinewebfonts.com/c/5cfbe76f00e7c4d6ba5d963f6c179606?family=Museo+W01+700);
+@font-face {
+    font-family: "Avenir Light";
+    src: url(Avenir\ Light.ttf);
+}
+@font-face {
+    font-family: "Museo 700";
+    src: url("https://db.onlinewebfonts.com/t/5cfbe76f00e7c4d6ba5d963f6c179606.eot");
+    src: url("https://db.onlinewebfonts.com/t/5cfbe76f00e7c4d6ba5d963f6c179606.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/5cfbe76f00e7c4d6ba5d963f6c179606.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/5cfbe76f00e7c4d6ba5d963f6c179606.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/5cfbe76f00e7c4d6ba5d963f6c179606.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/5cfbe76f00e7c4d6ba5d963f6c179606.svg#Museo W01 700")format("svg");
+}
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    object-fit: cover;
+    font-family:'Museo 700';
+    }
+
+
+body::-webkit-scrollbar {
+    display: none;                   /* For Chrome, Safari, and Opera */
+}
+
+
+.fadeLineDOWN{
+    height:30px;
+    width:100%;
+    position:relative;
+    box-shadow: 0 15px 15px 5px #cdcdcd;
+    transform: skew(0,-1deg);
+    margin-bottom: 120px;
+}
+
+.fadeLineUP{
+    height:30px;
+    width:100%;
+    position:relative;
+    box-shadow: 0px -10px 5px 5px #cdcdcd;
+    transform: skew(0,-1deg);
+    margin-top: 180px;
+}
+
+                                /* First Section */
+
+.header {
+    width: 100%;
+    height: 250px;
+    position:relative;
+    display:inline-block;
+}
+
+.wallpaper {
+    display: block;
+    width: 100%; 
+    height: 550px; 
+}
+
+.vertical-header {
+    position: absolute;
+    top:100px;
+    right:75px;
+}
+
+.vertical-header li {
+    text-align: center;;
+    padding:10px;
+    color: aliceblue;
+    list-style-type: none;
+    font-size: 19px;
+    transition-duration: 500ms;
+}
+.vertical-header p {
+    font-size:200px;
+}
+.vertical-header li:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: large;
+    border-radius: 2px;
+    transition: transform 10s;
+}
+
+.vertical-header img {
+    height: 160px;
+    width: auto;
+}
+
+.vertical-header button {
+    all: initial;
+    color:white;
+    font-size:21px;
+}
+
+.first-page .school-name {
+    position:absolute;
+    color:aliceblue;
+    top: 100px;
+    left: 40px;
+    font-size: 45px;
+    width: 45px;
+    height:auto;
+}
+
+                                /* Second Section */
+
+
+.origin-title {
+    padding-top: 80px;
+    text-align: center;
+    font-size: 26px;
+    padding-bottom: 10px;
+    margin-top: 200px;
+    position: relative;
+    z-index: 1;
+}
+
+.column-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 180px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.column {
+    flex: 1;
+    width: 200px;
+    text-align: center;
+    font-size: 14px;
+    margin: 40px;
+    line-height: 20px;
+    gap: 20;
+    justify-content: baseline;
+    position: relative;
+    z-index: 1;
+}
+
+
+.column img {
+    width: 80vh;
+    padding-bottom: 30px;
+    margin-left: 10%;
+    position: relative;
+    z-index: 1;
+}
+
+
+                              /* Third Section */
+
+
+.thirdSection {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    
+}   
+.imageContainer {
+    width:25%;
+    height:500px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 15%;
+    z-index: 2;
+}
+
+.imageContainer img {
+    width:100%;
+    height: 500px;
+    border-radius: 1px;
+}
+
+.imageContainer h3 {
+    font-family: "Museo 700";
+    font-size: 28px;
+    text-align:center;
+    color:white;
+  
+}
+.imageContainer p {
+    font-family:"Avenir Light";
+    font-size: 18px;  
+    margin: 50px 20px 0 20px;
+    text-align:justify;
+    color:white;
+   
+}
+.Sports, .Arts, .Primary, .Secondary {
+    position: relative;
+    z-index: 3;
+    top: -500px;
+    height: 500px;
+    background-color: #00000099;
+}
+.design {
+    width:30%;
+    height: 6px;
+    background-color:#6b9aa4;
+    margin: 15px auto 0 auto;
+}
+.ani {
+    display: inline-block;
+    position: relative;
+    transform: translateY(90%);
+    transition: all 1.2s ease;
+}
+.imageContainer:hover .ani {
+    transform:translateY(0);
+}
+
+
+                        /* Fourth Section*/
+
+.S3container {
+    display: flex;
+    gap: 35px;
+    padding: 100px 0;
+    padding-left: 10px;
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+
+.S3headings {
+    display: flex;
+    gap:200px;
+    font-size:40px; 
+    width:220vh;
+    justify-content: center;
+    left:60px;
+}
+
+.S3headings:hover {
+    transition: transform 0.2s;
+}
+
+.S3container h1 {
+    display:relative;
+}
+
+.S3box {
+    background-color: white;
+    max-width: 350px;
+    height: 300px;
+    text-align: left;
+    overflow: hidden;
+    position: relative; 
+}
+
+.S3box img {
+    width: 100%;
+    height: 300px;
+    border-radius: 3px;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.S3content {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding-top:240px;
+    padding-right: 4px;
+    box-sizing: border-box; 
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.S3content p {
+    font-size: 34px;
+    color: #fff;
+    transform-origin: center right; 
+    margin: 0; 
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.S3box:hover {
+    transform:skew(0,1deg);
+    box-shadow: 9px 9px 11px 7px #cdcdcd;
+}
+
+.S3box:hover .S3content {
+    opacity: 1;
+}
+
+.roundedLineContainer{
+    display: flex;
+    gap:155px;
+    font-size:40px; 
+    width:220vh;
+    justify-content: center;
+    left:60px;
+    margin-top: 4px;
+}
+.roundedLine {
+    background-color: black;
+    border-radius: 40px;
+    width:240px;
+    height: 15px;;
+}
+
+
+
+                                /* Footer */
+
+.footer {
+    background-color: #0571d3;
+    width: 100%;
+    height: 60vh;
+    color: white;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; 
+}
+
+.footerDesc {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    padding: 10px; 
+    width:75vh;
+}
+
+.footerItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content:right;
+}
+
+.footerItem p {
+    margin-left: 10px; 
+    text-align:right;
+    left:0;
+}
+
+.footerItem a {
+    color: white; 
+    text-decoration: none;
+}
+
+
+.footerDesc img {
+    height: 3vh;
+    width:3vh;
+    display:inline-block;
+}
+
+div.footerDesc > img:first-of-type {
+    height: 25vh;
+    width: auto;
+    display:inline-block;
+    margin-top:-100px;
+    margin-bottom:37px;
+}
+
+.footerImgs {
+    height:59vh;
+    width: 43vw;
+    display: flex;
+    flex-direction: row;
+    padding: 10px; 
+    flex-wrap:wrap;
+    padding:30px;
+    gap:45px;
+}
+.footerImgs img {
+    height:90px;
+    width: auto;
+}
+
+/* Key Frames*/

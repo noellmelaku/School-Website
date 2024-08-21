@@ -58,7 +58,7 @@ body::-webkit-scrollbar {
 .wallpaper {
     display: block;
     width: 100%; 
-    height: 550px; 
+    height: 675px; 
 }
 
 .vertical-header {
@@ -228,12 +228,13 @@ body::-webkit-scrollbar {
     height: 70vh;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 50px;
 }
 
 
 .S3headings {
     display: flex;
+    flex-direction: row;
     gap:200px;
     font-size:40px; 
     width:220vh;

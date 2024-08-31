@@ -48,18 +48,59 @@ body::-webkit-scrollbar {
 
                                 /* First Section */
 
-.header {
-    width: 100%;
-    height: 250px;
-    position:relative;
-    display:inline-block;
+
+
+.slider-wrapper {
+    position: relative;
+    margin: 0 auto;
+    height: 40rem; /* Set the desired height here */
 }
 
-.wallpaper {
-    display: block;
-    width: 100%; 
-    height: 675px; 
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+    max-height: 100%; 
+    -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar Firefox */
 }
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    max-height: 100%;
+}
+
+
+.slider-nav {
+    position: absolute;
+    bottom: 3.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.65rem;
+}
+
+.slider-nav a {
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: 50%;
+    background-color: hsla(0, 0%, 100%, 0.5); /* Light indicator color */
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.slider-nav a:hover,
+.slider-nav a:focus {
+    background-color: hsla(0, 0%, 100%, 0.9); /* Highlight on hover/focus */
+}
+
+
+
 
 .vertical-header {
     position: absolute;
@@ -106,7 +147,39 @@ body::-webkit-scrollbar {
     height:auto;
 }
 
-                                /* Second Section */
+
+                                /* Second Section*/
+
+.welcome {
+    max-width: 100%;
+    height:35rem;
+    color: 071930;
+}
+
+.welcome h1 {
+    font-size: 2rem;
+    padding-top: 9rem;
+    border-radius: 85%;
+    text-align: center;
+    justify-content: center;
+}
+
+.blockS2 {
+    background-color: #a0121b;
+    width: 13rem;
+    height: 1rem;
+    margin-top:1rem;
+    margin-bottom:3rem;
+    margin-left: 41%;
+}
+              
+
+.welcome p {
+    font-size:1.43rem;
+    margin-top:1%;
+    text-align: center;
+}
+                                /* Third Section */
 
 
 .origin-title {
@@ -151,11 +224,11 @@ body::-webkit-scrollbar {
 }
 
 
-                              /* Third Section */
+                              /* Fourth Section */
 
 
 .thirdSection {
-    margin-top: 80px;
+    margin-top: 60px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -217,18 +290,17 @@ body::-webkit-scrollbar {
 }
 
 
-                        /* Fourth Section*/
+                                /* Fifth Section*/
 
 .S3container {
     display: flex;
     gap: 35px;
-    padding: 100px 0;
+    padding: 10 0px 0;
     padding-left: 10px;
     width: 100%;
-    height: 70vh;
+    height: 65vh;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
 }
 
 
@@ -353,7 +425,7 @@ body::-webkit-scrollbar {
 .footerItem p {
     margin-left: 10px; 
     text-align:right;
-    left:0;
+    left:0; 
 }
 
 .footerItem a {

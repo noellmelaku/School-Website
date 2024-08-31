@@ -38,7 +38,7 @@ body::-webkit-scrollbar {
 }
 
 .fadeLineUP{
-    height:30px;
+    height:29.9px;
     width:100%;
     position:relative;
     box-shadow: 0px -10px 5px 5px #cdcdcd;

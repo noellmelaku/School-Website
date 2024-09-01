@@ -73,6 +73,7 @@ body::-webkit-scrollbar {
     scroll-snap-align: start;
     object-fit: cover;
     max-height: 100%;
+    max-width:100%;
 }
 
 
@@ -98,8 +99,6 @@ body::-webkit-scrollbar {
 .slider-nav a:focus {
     background-color: hsla(0, 0%, 100%, 0.9); /* Highlight on hover/focus */
 }
-
-
 
 
 .vertical-header {
@@ -152,13 +151,13 @@ body::-webkit-scrollbar {
 
 .welcome {
     max-width: 100%;
-    height:35rem;
-    color: 071930;
+    margin-top:9%;
+    height:22rem;
+    color: #071930;
 }
 
 .welcome h1 {
     font-size: 2rem;
-    padding-top: 9rem;
     border-radius: 85%;
     text-align: center;
     justify-content: center;
@@ -166,11 +165,12 @@ body::-webkit-scrollbar {
 
 .blockS2 {
     background-color: #a0121b;
-    width: 13rem;
+    width: 11rem;
     height: 1rem;
     margin-top:1rem;
     margin-bottom:3rem;
-    margin-left: 41%;
+    margin-left: 42.5%;
+    border-radius: 4%;
 }
               
 
@@ -292,109 +292,76 @@ body::-webkit-scrollbar {
 
                                 /* Fifth Section*/
 
+/* Container styles */
 .S3container {
     display: flex;
-    gap: 35px;
-    padding: 10 0px 0;
-    padding-left: 10px;
-    width: 100%;
-    height: 65vh;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 1rem; 
 }
 
-
-.S3headings {
-    display: flex;
-    flex-direction: row;
-    gap:200px;
-    font-size:40px; 
-    width:220vh;
-    justify-content: center;
-    left:60px;
-}
-
-.S3headings:hover {
-    transition: transform 0.2s;
-}
-
-.S3container h1 {
-    display:relative;
-}
-
+/* Box styling */
 .S3box {
-    background-color: white;
-    max-width: 350px;
-    height: 300px;
-    text-align: left;
-    overflow: hidden;
-    position: relative; 
-}
-
-.S3box img {
-    width: 100%;
-    height: 300px;
-    border-radius: 3px;
-    position: relative;
-    display: block;
-    margin: auto;
-}
-
-.S3content {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.6);
+    flex: 1; 
     display: flex;
-    justify-content:flex-end;
+    flex-direction: column;
     align-items: center;
-    padding-top:240px;
-    padding-right: 4px;
-    box-sizing: border-box; 
-    opacity: 0;
-    transition: opacity 0.3s;
+    justify-content: center; 
+    text-align: center; 
+    transition: transform 0.3s ease-in-out;
+    padding: 1rem; 
 }
 
-.S3content p {
-    font-size: 34px;
-    color: #fff;
-    transform-origin: center right; 
-    margin: 0; 
-    white-space: nowrap;
-    overflow: hidden; 
-    text-overflow: ellipsis; 
+/* Image styling */
+.S3box img {
+    width: 23rem;
+    height: 20rem;
+    border-radius: 0.25rem;
+    object-fit: cover; /* Ensures the image fits within the box */
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    filter: brightness(1); /* Normal brightness */
 }
 
-.S3box:hover {
-    transform:skew(0,1deg);
-    box-shadow: 9px 9px 11px 7px #cdcdcd;
+/* Text and line styling */
+.S3container p {
+    margin: 0.5rem 0 0; /* Adds space above and below text */
+    margin-top:3rem;
+    font-size: 2.5rem;
+    transition: transform 0.3s ease-in-out;
 }
 
-.S3box:hover .S3content {
-    opacity: 1;
-}
-
-.roundedLineContainer{
-    display: flex;
-    gap:155px;
-    font-size:40px; 
-    width:220vh;
-    justify-content: center;
-    left:60px;
-    margin-top: 4px;
-}
-.roundedLine {
+.S3container hr {
     background-color: black;
-    border-radius: 40px;
-    width:240px;
-    height: 15px;;
+    width: 27.6%;
+    height:0.766rem;
+    border-radius:0.3rem;
+    margin: 0.25rem auto; 
+    transition: transform 0.5s ease-in-out, color 10s ease-in-out;
 }
 
 
+.S3box:hover img {
+    filter: brightness(0.7); 
+}
 
-                                /* Footer */
+.S3box:nth-of-type(1):hover hr {
+    background-color: #673451; 
+}
+
+.S3box:nth-of-type(2):hover hr {
+    background-color: #a0121b;
+}
+
+.S3box:nth-of-type(3):hover hr {
+    background-color: #6b9aa4; 
+}
+
+
+                                              /* Footer */
+
+.waveDesign {
+    max-width:100%;
+}
 
 .footer {
     background-color: #0571d3;
@@ -457,10 +424,9 @@ div.footerDesc > img:first-of-type {
     flex-wrap:wrap;
     padding:30px;
     gap:45px;
+    max-width:100%;
 }
 .footerImgs img {
     height:90px;
     width: auto;
 }
-
-/* Key Frames*/

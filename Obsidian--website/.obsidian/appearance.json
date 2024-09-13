@@ -1,0 +1,7 @@
+{
+  "theme": "obsidian",
+  "textFontFamily": "Comic Sans MS",
+  "enabledCssSnippets": [
+    "obsidianStyles"
+  ]
+}

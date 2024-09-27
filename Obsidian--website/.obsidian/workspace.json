@@ -49,38 +49,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 Ideas for the website/Year 13 page.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0b29a4bd210c7d14",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 Ideas for the website/ECAs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d2d0a418a636c3e3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 Ideas for the website/Year 13 page.md",
+                "file": "01 Ideas for the website/Welcome section animation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -146,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 Ideas for the website/Year 13 page.md",
+                "file": "01 Ideas for the website/Welcome section animation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01 Ideas for the website/Year 13 page.md",
+                "file": "01 Ideas for the website/Welcome section animation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 Ideas for the website/Year 13 page.md"
+                "file": "01 Ideas for the website/Welcome section animation.md"
               }
             }
           }
@@ -207,16 +183,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d2d0a418a636c3e3",
+  "active": "792ca4dd8a62775a",
   "lastOpenFiles": [
-    "01 Ideas for the website/Welcome section animation.md",
+    "02 Ideas for future projects/AI.md",
+    "01 Ideas for the website/Year 13 page.md",
     "01 Ideas for the website/Calendar.md",
     "01 Ideas for the website/ECAs.md",
-    "01 Ideas for the website/Fundraisers.md",
+    "01 Ideas for the website/Welcome section animation.md",
     "01 Ideas for the website/Merch Store.md",
-    "01 Ideas for the website/Year 13 page.md",
+    "01 Ideas for the website/Fundraisers.md",
+    "2024-09-13.md",
+    "Untitled.canvas",
     "Index/Time Capsule.md",
-    "02 Ideas for future projects/Untitled.md",
     "02 Ideas for future projects",
     "Templates/Ideas Template.md",
     "Index",

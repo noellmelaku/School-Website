@@ -27,28 +27,16 @@ body::-webkit-scrollbar {
     display: none;                   /* For Chrome, Safari, and Opera */
 }
 
-
-.fadeLineDOWN{
-    height:30px;
-    width:100%;
-    position:relative;
-    box-shadow: 0 15px 15px 5px #cdcdcd;
-    transform: skew(0,-1deg);
-    margin-bottom: 120px;
+a {
+    color: inherit;  /* Use the same color as the surrounding text */
+    text-decoration: none;  /* Remove the underline */
 }
 
-.fadeLineUP{
-    height:29.9px;
-    width:100%;
-    position:relative;
-    box-shadow: 0px -10px 5px 5px #cdcdcd;
-    transform: skew(0,-1deg);
-    margin-top: 180px;
-}
-
-                                /* First Section */
+                              /*HOME PAGE*/ 
 
 
+
+                            /* First Section */
 
 .slider-wrapper {
     position: relative;
@@ -201,6 +189,21 @@ body::-webkit-scrollbar {
     z-index: 1;
 }
 
+.originLineContainer {
+    height:0.5rem;
+    width:20rem;
+    margin:0 auto;
+}
+
+.originLine {
+    background-color: #6b9aa4;
+    margin-left:25.2%;
+    width:2.7rem;
+    height:0.5rem;
+    border-radius:1px;
+    transition: margin-left 0.8s ease-in-out;
+}
+
 .column {
     flex: 1;
     width: 200px;
@@ -223,6 +226,9 @@ body::-webkit-scrollbar {
     z-index: 1;
 }
 
+.originLineContainer:hover .originLine {
+    margin-left:61%
+}
 
                               /* Fourth Section */
 
@@ -312,19 +318,31 @@ body::-webkit-scrollbar {
     padding: 1rem; 
 }
 
-/* Image styling */
 .S3box img {
     width: 23rem;
     height: 20rem;
     border-radius: 0.25rem;
-    object-fit: cover; /* Ensures the image fits within the box */
+    object-fit: cover; 
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
-    filter: brightness(1); /* Normal brightness */
+    filter: brightness(1); 
 }
 
-/* Text and line styling */
+.designElement{
+    box-sizing:content-box;
+    position: absolute;
+    margin-top:-60px;
+    z-index:69;
+}
+
+.designElement img {
+    height: 25rem;
+    width:25rem;
+    opacity: 0; 
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+}
+
 .S3container p {
-    margin: 0.5rem 0 0; /* Adds space above and below text */
+    margin: 0.5rem 0 0; 
     margin-top:3rem;
     font-size: 2.5rem;
     transition: transform 0.3s ease-in-out;
@@ -344,23 +362,89 @@ body::-webkit-scrollbar {
     filter: brightness(0.7); 
 }
 
-.S3box:nth-of-type(1):hover hr {
-    background-color: #673451; 
+.designElement:hover img {
+    opacity: 1; 
+    filter: brightness(0.95); 
 }
 
-.S3box:nth-of-type(2):hover hr {
+.S3box:nth-child(1):hover hr {
+    background-color: #6b9aa4; 
+}
+
+.S3box:nth-child(2):hover hr {
     background-color: #a0121b;
 }
 
-.S3box:nth-of-type(3):hover hr {
-    background-color: #6b9aa4; 
+.S3box:nth-child(3):hover hr {
+    background-color: #673451; 
 }
+
+
+
+                                    /*STUDENTS PAGE*/
+.studentHeaderImg img {
+    width:100%;
+    height:35rem;
+    flex:1;
+}
+
+
+.studentsPage {
+    display: flex;  
+    width: 100%;
+    height: 40rem;
+}
+
+.studentsNavBar {
+    flex: 1;
+    justify-content: center;
+    background-color: #6b9aa4;
+    max-width: 28%; 
+    height: 100%; 
+}
+
+.studentsBox{
+    background-color: #ddd;
+    margin-top:8rem;
+    width: 18rem;
+    border-radius: 3px;
+}
+
+.studentsDesc {
+    display: none; 
+    background-color:#673451;
+    flex: 3; 
+    max-width: 72%; 
+    height: 100%;
+}
+
+.studentsDesc:target {
+    display: block;
+}
+
+#studentsEY {
+    display: block; /* Show the Early Years section by default */
+}
+
+
+.tab {
+    display: block; 
+    margin: 10px 0; 
+    text-decoration: none; 
+    padding: 10px; 
+}
+
+.tab:hover {
+    background-color: #ddd; 
+}
+
 
 
                                               /* Footer */
 
 .waveDesign {
-    max-width:100%;
+    min-width:100%;
+    margin-bottom: -3.2px;
 }
 
 .footer {

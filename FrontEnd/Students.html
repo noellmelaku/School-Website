@@ -1,83 +1,93 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sandford School</title>
-
-  <link href="https://db.onlinewebfonts.com/c/5cfbe76f00e7c4d6ba5d963f6c179606?family=Museo+W01+700" rel="stylesheet">  <!-- Link for the font Museo -->
-  <link href="styles.css" rel="stylesheet" type="text/css" /> <!-- Link for custom styles -->
+  <title>Sandford School | Early Years</title>
+  <link href="https://db.onlinewebfonts.com/c/5cfbe76f00e7c4d6ba5d963f6c179606?family=Museo+W01+700" rel="stylesheet"> <!-- Museo Font -->
+  <link href="styles.css" rel="stylesheet"> <!-- External CSS -->
 </head>
 <body>
 
-<section>
-    <div class="studentHeaderImg">
-        <img src="Images\Student Page\Early years\JEF_0971.JPG">
+  <!-- Navigation Bar -->
+  <header class="navigationBar">
+    <a href="/"><img src="Images/Logo.png" alt="Sandford Logo" class="logo"></a>
+    <nav>
+      <ul class="navLinks">
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Admissions</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="ctaButton">Contact Us</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="heroSection">
+    <img src="Images/Student Page/Early years/JEF_9453.png" alt="Early Years Hero" class="heroImage">
+    <div class="heroText">
+      <h1>Early Years</h1>
+      <p>Fostering creativity, confidence, and curiosity in our youngest learners.</p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="contentSection">
+    <div class="tabs">
+      <button class="tab active" data-target="earlyYears">Early Years</button>
+      <button class="tab" data-target="primarySchool">Primary School</button>
+      <button class="tab" data-target="secondarySchool">Secondary School</button>
+      <button class="tab" data-target="ibProgramme">IB Programme</button>
+      <button class="tab" data-target="studentCounselling">Student Counselling</button>
     </div>
 
-    <div class="studentsPage">
-        <div class="studentsNavBar">
-            <div class="studentsBox">
-                <a href="#studentsEY" class="tab">Early Years</a>
-                <a href="#studentsPrimary" class="tab">Primary School</a>
-                <a href="#studentsSecondary" class="tab">Secondary School</a>
-            </div>
-        </div>
+    <div class="tabContent" id="earlyYears">
+      <h2>Welcome to Early Years</h2>
+      <p>Our Early Years program nurtures the holistic development of children, ensuring a strong foundation for their future learning.</p>
+    </div>
+    <div class="tabContent hidden" id="primarySchool">
+      <h2>Primary School</h2>
+      <p>Engaging, hands-on learning experiences designed to develop confident and curious learners.</p>
+    </div>
+    <div class="tabContent hidden" id="secondarySchool">
+      <h2>Secondary School</h2>
+      <p>Empowering students with the skills and knowledge needed for success in higher education and beyond.</p>
+    </div>
+    <div class="tabContent hidden" id="ibProgramme">
+      <h2>IB Programme</h2>
+      <p>Our International Baccalaureate (IB) program offers a rigorous curriculum that encourages critical thinking, creativity, and global awareness.</p>
+    </div>
+    <div class="tabContent hidden" id="studentCounselling">
+      <h2>Student Counselling</h2>
+      <p>Our student counselling services provide a supportive environment for personal growth, mental well-being, and academic success.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <!-- Footer content as per your original design -->
+  </footer>
+
+  <script>
+
+    
+    const tabs = document.querySelectorAll('.tab');
+    const tabContents = document.querySelectorAll('.tabContent');
+    
+    
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+       
+        tabs.forEach(tab => tab.classList.remove('active'));
+        tabContents.forEach(content => content.classList.add('hidden'));
         
-        <div class="studentsDesc">
-            <div id="studentsEY">
-                
-                <h2>Early Years</h2>
-                <p>Content for Early Years...</p>
-            </div>
-            <div id="studentsPrimary">
-                <h2>Primary School</h2>
-                <p>Content for Primary School...</p>
-            </div>
-            <div id="studentsSecondary">
-                <h2>Secondary School</h2>
-                <p>Content for Secondary School...</p>
-            </div>
-        </div>
-    </div>
-    
-</section>
-    
-                                        <!-- Footer -->
-
-
-<section>
-
-<img src="Images/waveDesign 2.png" class="waveDesign">
-
-<div class="footer">
-
-    <div class="footerImgs">
-    <a href="https://aisa.or.ke/" target="_blank"><img src="Images/Footer/AISA Logo.png"></a>
-    <a href="https://www.dofe.org/" target="_blank"><img src="Images/Footer/Duke of edinbrugh Logo.png"></a>
-    <a href="https://www.ibo.org/" target="_blank"><img src="Images/Footer/IB logo.png"></a>
-    <a href="https://www.cam.ac.uk/" target="_blank"><img src="Images/Footer/Cambridge Logo.png"></a>
-    
-
-    </div>
-
-    <div class="footerDesc">
-    <img class="footerLogo" src="Images/Footer/Full Logo.png" alt="SIS logo">
-        <div class="footerItem">
-        <img src="Images/Footer/Phone logo.png" alt=img><p>+25111233892</p>
-        </div>
-        <div class="footerItem">
-        <img src="Images/Footer/email logo.png" alt="img"><p>admission@sandfordschool.org</p>
-        </div>
-        <img src="Images/Footer/location logo.png" alt="img"><a href="https://goo.gl/maps/nZ29XxooSHrHufnQ9"><p>Shewareged Gedle St, Addis Ababa, Ethiopia.</p></a>
-        </div>
-</div>
-
-
-<div class="footerLinks">
-    </div>
-
-</section>
+     
+        tab.classList.add('active');
+        const target = document.getElementById(tab.dataset.target);
+        target.classList.remove('hidden');
+      });
+    });
+    </script>
 </body>
 </html>

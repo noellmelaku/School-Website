@@ -550,6 +550,7 @@ body html {
 .heroSection {
     position: relative;
     text-align: center;
+    z-index: 0;
 }
 
 .heroImage {
@@ -655,10 +656,11 @@ body html {
                                  /*COMMUNITY PAGE */ 
 
 .squiggly-wave {
- width: 100%;
-height: 40px;
- overflow: hidden;
- z-index: 999;
+    position:relative;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    z-index: 999;
     }
 .squiggly-wave svg {
     display: block;

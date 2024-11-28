@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="smooth-scroll-wrapper">
 
 <head>
   <meta charset="utf-8">
@@ -10,7 +10,7 @@
   <link href="styles.css" rel="stylesheet" type="text/css" /> <!-- Link for custom styles -->
 </head>
 <body>
-  <section>
+  <section class="content">
 
     <!-- First Section -->
     <div class="first-page">
@@ -48,8 +48,8 @@
     <div class="welcome">
       <h1>A gracefully Diverse Learning Environment</h1>
       <div class="blockS2"></div>
-      <p>Embraces Challenge</p>
-      <p>Motivates Personal Development</p>
+             <p>Embraces Challenge</p>
+        <p>Motivates Personal Development</p>
       <p>Encourages A thirst for knowledge</p>
     </div>
   </section>
@@ -201,7 +201,39 @@
       </div>
   
   </section>
-  
+
+                              <!-- JAVASCRIPT -->
+
+    <script>
+      const html = document.content;  // Target the <html> element
+      const body = document.body;             // Target the <body> element
+      const scrollSpeed = 0.1;
+      let offset = 0;
+    
+      // Set body's height based on the content's height
+      function setBodyHeight() {
+          const contentHeight = body.scrollHeight; // Get total height of the content
+          html.style.height = `${contentHeight}px`; // Set height on the <html> element
+      }
+    
+      // Smooth scroll function
+      function smoothScroll() {
+          offset += (window.pageYOffset - offset) * scrollSpeed;
+          html.style.transform = `translateY(-${offset}px) translateZ(0)`; // Apply transform on <html>
+          requestAnimationFrame(smoothScroll);
+      }
+    
+      // Initial call to set body height
+      setBodyHeight();
+    
+      // Recalculate on resize
+      window.addEventListener("resize", setBodyHeight);
+    
+      // Start the smooth scroll loop
+      smoothScroll();
+    </script>
+    
+
   </body>
   
   </html>

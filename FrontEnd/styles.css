@@ -34,14 +34,26 @@ a {
 
                               /*HOME PAGE*/ 
 
-
+/* Fullscreen video styling */
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black; /* Fallback for unsupported browsers */
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
                             /* First Section */
 
 .slider-wrapper {
     position: relative;
     margin: 0 auto;
-    height: 40rem; /* Set the desired height here */
+    height: 40rem; 
 }
 
 .slider {
@@ -100,7 +112,7 @@ a {
     color: aliceblue;
     list-style-type: none;
     font-size: 19px;
-    transition-duration: 500ms;
+    transition-duration: 300ms;
 }
 .vertical-header p {
     font-size:200px;
@@ -132,8 +144,6 @@ a {
     width: 45px;
     height:auto;
 }
-
-
                                 /* Second Section*/
 
 .welcome {
@@ -157,7 +167,7 @@ a {
     margin-top:1rem;
     margin-bottom:3rem;
     margin-left: 42.5%;
-    border-radius: 4%;
+    border-radius: 6px;
 }
               
 
@@ -282,13 +292,14 @@ a {
     color:white;
   
 }
+
 .imageContainer p {
-    font-family:"Avenir Light";
+    font-family:"Museo 700";
     font-size: 18px;  
     margin: 50px 20px 0 20px;
     text-align:justify;
     color:white;
-   
+    text-decoration: none;
 }
 .Sports, .Arts, .Primary, .Secondary {
     position: relative;
@@ -314,105 +325,122 @@ a {
 }
 
 
+
                                 /* Third Section*/
 
 .S3container {
     display: flex;
-    justify-content: space-between; 
-    align-items: flex-start; 
-    gap: 1rem; 
-}
-
-.S3box {
-    flex: 1; 
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    }
+    
+    .S3box {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
-    text-align: center; 
+    justify-content: center;
+    text-align: center;
     transition: transform 0.3s ease-in-out;
-    padding: 1rem; 
-}
-
-.S3box img {
+    padding: 1rem;
+    outline: none;
+    border: none; 
+    }
+    
+    .S3box img {
     width: 23rem;
     height: 20rem;
     border-radius: 0.25rem;
-    object-fit: cover; 
+    object-fit: cover;
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
-    filter: brightness(1); 
-}
-
-.designElement{
-    box-sizing:content-box;
+    filter: brightness(1);
+    }
+    
+    .designElement {
+    box-sizing: content-box;
     position: absolute;
-    margin-top:-60px;
-    z-index:69;
-}
-
-.designElement img {
+    margin-top: -15px;
+    z-index: 69;
+    }
+    
+    .designElement img {
     height: 25rem;
-    width:25rem;
-    opacity: 0; 
+    width: 25rem;
+    opacity: 0;
     transition: transform 0.3s ease-in, opacity 0.3s ease-in;
-}
-
-.S3container .S3box:nth-of-type(1) .designElement img {
+    }
+    
+    .S3container .S3box:nth-of-type(1) .designElement img {
     margin-top: -84px;
-}
-
-
-
-.S3container p {
-    margin: 0.5rem 0 0; 
-    margin-top:3rem;
+    }
+    
+    .S3container p {
+    margin: 0.5rem 0 0;
+    margin-top: 3rem;
     font-size: 2.5rem;
     transition: transform 0.3s ease-in-out;
-}
-
-.S3container hr {
-    background-color: black;
+    }
+    
+  
+    .S3container hr {
+    border: none; 
+    outline: none; 
+    box-shadow: none; 
+    background-color: black; 
     width: 27.6%;
-    height:0.766rem;
-    border-radius:0.3rem;
-    margin: 0.25rem auto; 
-    transition: transform 0.5s ease-in-out, color 10s ease-in-out;
-}
-
-
-.S3box:hover img {
-    filter: brightness(0.7); 
-}
-
-.designElement:hover img {
-    opacity: 1; 
-    filter: brightness(0.95); 
-}
-
-.S3box:nth-child(1):hover hr {
-    background-color: #6b9aa4; 
-}
-
-.S3box:nth-child(2):hover hr {
+    height: 0.766rem;
+    border-radius: 0.3rem;
+    margin: 0.25rem auto;
+    transition: transform 0.5s ease-in-out, background-color 0.3s ease-in-out;
+    }
+    
+    .S3box:hover img {
+    filter: brightness(0.7);
+    }
+    
+    .designElement:hover img {
+    opacity: 1;
+    filter: brightness(0.95);
+    }
+    
+    .students-box:hover hr {
+    background-color: #6b9aa4;
+    }
+    
+    .community-box:hover hr {
     background-color: #a0121b;
-}
-
-.S3box:nth-child(3):hover hr {
-    background-color: #673451; 
-}
-
-
-.waveDesignV {
-    max-width:100%;
+    }
+    
+    .curriculum-box:hover hr {
+    background-color: #673451;
+    }
+    
+    a {
+    text-decoration: none; 
+    outline: none; 
+    }
+    
+    .S3box:focus {
+    outline: none;
+    }
+    
+    
+    .S3box:hover,
+    .S3box:focus {
+    box-shadow: none;
+    }
+    
+    .waveDesignV {
+    max-width: 100%;
     margin-bottom: -7.2px;
-}
-
-.waveDesign {
-    min-width:100%;
-    max-width:100%;
-    margin-bottom: -3.2px;
-}
-
+    }
+    
+    .waveDesign {
+    min-width: 100%;
+    max-width: 100%;
+    margin-bottom: -3.8px;
+    }
                                     /*  FOOTER  */
 
 .footer {
@@ -557,7 +585,7 @@ body html {
     width: 100%;
     height: 550px;
     object-fit: cover;
-    margin-top:-35px;
+    margin-top:-35px;   
     z-index:1;
 }
 
@@ -610,7 +638,6 @@ body html {
 .tabContent {
     display: none;
     padding: 20px;
-    background-color: #f9f9f9;
     border-radius: 5px;
 }
 
@@ -827,3 +854,345 @@ body html {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
     
+
+
+
+/* Head of Primary Section */
+.headOfPrimary {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+  
+.headOfPrimary-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.headOfPrimary-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+  
+.headOfPrimary-message {
+    max-width: 600px;
+    text-align: left;
+}
+  
+.headOfPrimary-message h2 {
+    font-size: 2rem;
+    color: #003E6B;
+    margin-bottom: 20px;
+}
+  
+.headOfPrimary-message p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+  
+.headOfPrimary-message .ctaButton {
+    background-color: #ff6a00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+  
+.headOfPrimary-message .ctaButton:hover {
+    background-color: #d75a00;
+}
+
+/* Contact Page */
+.contactPage {
+    margin-top: -13rem;
+    width:100%;
+    height: 900px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 40px;
+}
+
+.contact-left, .contact-right {
+    flex: 1;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background: #0871d4;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.info-item img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
+
+/* Early Years Leadership Section */
+.early-years-leader {
+    padding: 4rem 2rem;
+    background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), 
+                url('Images/EarlyYears/background-pattern.jpg');
+}
+        
+.leader-profile {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 3rem;
+    align-items: center;
+}
+        
+.leader-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+        
+.leader-message {
+    flex: 1;
+}
+        
+.leader-message blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #007bff;
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+/* Program Highlights */
+/* Program Highlights */
+.program-highlights {
+    padding: 2rem;
+  }
+  
+  .highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+  
+  .highlight-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .highlight-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .highlight-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+  }
+  
+  .highlight-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  .highlight-card h3 {
+    padding: 1rem;
+    margin: 0;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .highlight-card:hover h3 {
+    color: #0871d4;
+  }
+  
+  .highlight-card p {
+    padding: 0 1rem 1rem;
+    color: #666;
+  }
+
+/* IG Banner */
+  .ig-banner {
+    width: 108.5vw;
+    margin: 6rem 0;
+    margin-left: -5.9rem;
+    padding: 0;
+}
+
+.igBanner-container {
+    width: 100%;
+    height: 28rem;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.igBanner {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+}
+
+  
+  .igBanner-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: all 0.3s ease;
+    z-index: 1;
+  }
+  
+  .igBanner-container::after {
+    content: 'Check out our Insta page!';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    opacity: 0;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .igBanner-container:hover::before {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .igBanner-container:hover::after {
+    opacity: 1;
+  }
+
+  .igBanner2 {
+    width: 30%; /* Reduced from 50% to 35% */
+    height: 65%; /* Added height reduction */
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    top: 45%; /* Moved down from 50% to 60% to place it under */
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 1; /* Changed from 999 to 1 to display under */
+}
+
+
+.igBanner-container:hover .igBanner2 {
+    opacity: 1;
+}
+
+
+
+/* Parent Information Hub */
+.parent-hub {
+    background-color: #f8f9fa;
+    padding: 4rem 2rem;
+}
+        
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+        
+.info-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+        
+.info-box h3 {
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+        
+.info-box ul {
+    list-style: none;
+    padding: 0;
+}
+        
+.info-box ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}

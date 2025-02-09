@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About SIS</title>
+  
+    <link href="https://db.onlinewebfonts.com/c/5cfbe76f00e7c4d6ba5d963f6c179606?family=Museo+W01+700" rel="stylesheet">  <!-- Link for the font Museo -->
+    <link href="styles.css" rel="stylesheet" type="text/css" /> <!-- Link for custom styles -->
+  </head>
+<body>
+    
+                    <!-- Nav Bar-->
+<header class="navigationBar">
+    <a href="HomePage.html"><img src="Images/Logo.png" alt="Sandford Logo" class="logo"></a>
+    <nav>
+      <ul class="navLinks">
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Admissions</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="ctaButton">Contact Us</a>
+  </header>
+
+    <!-- Squiggly Wave -->
+  <title>Wave</title>
+<body>
+    <div class="squiggly-wave">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <path d="M0,50 
+                 C90,0 180,100 270,50 
+                 C360,0 450,100 540,50 
+                 C630,0 720,100 810,50 
+                 C900,0 990,100 1080,50 
+                 C1170,0 1260,100 1350,50 
+                 C1440,0 1530,100 1620,50 
+                 L1440,100 L0,100 Z" 
+              fill=#0871d4
+              ></path>
+              
+      </svg>
+    </div>
+  </body>
+
+
+
+
+<img src="Images\Contact\JEF_9589.JPG" class="heroImage">
+
+  <section class="contactPage">
+      <p class="origin-title">
+          <b style="font-size: 48px;">Contact Us!</b>
+      </p>
+    
+      <div class="contact-container">
+          <div class="contact-left">
+              <h2>Get in Touch</h2>
+              <p>We'd love to hear from you! Please fill out the form below:</p>
+              <form class="contact-form">
+                  <input type="text" placeholder="Your Name">
+                  <input type="email" placeholder="Your Email">
+                  <textarea placeholder="Your Message"></textarea>
+                  <button type="submit">Send Message</button>
+              </form>
+          </div>
+        
+          <div class="contact-right">
+              <h2>Contact Information</h2>
+              <div class="contact-info">
+                  <div class="info-item">
+                      <img src="Images/Footer/Phone logo.png" alt="Phone">
+                      <p>+25111233892</p>
+                  </div>
+                  <div class="info-item">
+                      <img src="Images/Footer/email logo.png" alt="Email">
+                      <p>admission@sandfordschool.org</p>
+                  </div>
+                  <div class="info-item">
+                      <img src="Images/Footer/location logo.png" alt="Location">
+                      <p>Shewareged Gedle St, Addis Ababa, Ethiopia.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+ 
+
+
+  
+  <!-- Footer -->
+  <section>
+
+    <img class="waveDesign" src="Images/waveDesign 2.png" alt="Wave Design" draggable="false">
+
+
+    <div class="footer">
+  
+      <div class="footerImgs">
+        <a href="https://aisa.or.ke/" target="_blank"><img src="Images/Footer/AISA Logo.png" draggable="false"></a>
+        <a href="https://www.dofe.org/" target="_blank"><img src="Images/Footer/Duke of edinbrugh Logo.png" draggable="false"></a>
+        <a href="https://www.ibo.org/" target="_blank"><img src="Images/Footer/IB logo.png" draggable="false"></a>
+        <a href="https://www.cam.ac.uk/" target="_blank"><img src="Images/Footer/Cambridge Logo.png" draggable="false"></a>
+        
+  
+      </div>
+  
+      <div class="footerDesc">
+        <img class="footerLogo" src="Images/Footer/Full Logo.png" alt="SIS logo" draggable="false">
+          <div class="footerItem">
+            <img src="Images/Footer/Phone logo.png" alt=img draggable="false"><p>+25111233892</p>
+          </div>
+            <div class="footerItem">
+            <img src="Images/Footer/email logo.png" alt="img" draggable="false"><p>admission@sandfordschool.org</p>
+          </div>
+          <div class="footerItem">
+            <img src="Images/Footer/location logo.png" alt="img" draggable="false"><a href="https://goo.gl/maps/nZ29XxooSHrHufnQ9"><p>Shewareged Gedle St, Addis Ababa, Ethiopia.</p></a>
+          </div>
+          </div>
+    </div>
+  
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+    const html = document.content;  // Target the <html> element
+    const body = document.body;             // Target the <body> element
+    const scrollSpeed = 0.1;
+    let offset = 0;
+    
+    // Set body's height based on the content's height
+    function setBodyHeight() {
+        const contentHeight = body.scrollHeight; // Get total height of the content
+        html.style.height = `${contentHeight}px`; // Set height on the <html> element
+    }
+    
+    // Smooth scroll function
+    function smoothScroll() {
+        offset += (window.pageYOffset - offset) * scrollSpeed;
+        html.style.transform = `translateY(-${offset}px) translateZ(0)`; // Apply transform on <html>
+        requestAnimationFrame(smoothScroll);
+    }
+    
+    // Initial call to set body height
+    setBodyHeight();
+    
+    // Recalculate on resize
+    window.addEventListener("resize", setBodyHeight);
+    
+    // Start the smooth scroll loop
+    smoothScroll();
+    </script>
+    

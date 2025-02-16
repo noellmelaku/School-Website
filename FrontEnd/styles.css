@@ -32,6 +32,9 @@ a {
     text-decoration: none;  /* Remove the underline */
 }
 
+html {
+    scroll-behavior: smooth;
+  }
                               /*HOME PAGE*/ 
 
 /* Fullscreen video styling */
@@ -432,6 +435,7 @@ a {
     }
     
     .waveDesignV {
+    min-width: 100%;
     max-width: 100%;
     margin-bottom: -7.2px;
     }
@@ -523,7 +527,7 @@ body html {
     color: #333;
     line-height: 1.6;
 }
-
+ 
 
 .navigationBar {
     display: flex;
@@ -1196,3 +1200,314 @@ body html {
     padding: 0.5rem 0;
     border-bottom: 1px solid #eee;
 }
+
+
+/* Athletics */
+
+/* Modern Athletics Styling */
+.athletics-hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 100px 0;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Images/Athletics/hero-bg.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.athletics-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.7);
+}
+
+.animated-title {
+    font-size: 4.5rem;
+    background: linear-gradient(45deg, #0871d4, #00ff88);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: titleFloat 3s ease-in-out infinite;
+}
+
+.trophy-counter {
+    font-size: 3rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.count {
+    font-weight: 700;
+    color: #0871d4;
+}
+
+/* Sports Programs Section */
+.sports-programs {
+    padding: 60px 20px;
+}
+
+.sports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Interactive Sports Cards */
+.sports-carousel {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.sport-card {
+    min-width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.sport-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    background: linear-gradient(135deg, #0871d4, #05468a);
+    padding: 2rem;
+    color: white;
+}
+
+/* Facilities Section */
+.facilities {
+    padding: 60px 20px;
+    background: #f5f5f5;
+}
+
+.facilities-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.facilities-slider img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ISSAAA Section */
+.issaaa {
+    padding: 60px 20px;
+}
+
+.issaaa-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.trophy-showcase img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+/* Coaching Staff Section */
+.coaching-staff {
+    padding: 60px 20px;
+    background: #f5f5f5;
+}
+
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.staff-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.staff-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Interactive Map Styling */
+.interactive-map {
+    height: 600px;
+    position: relative;
+    background: url('Images/Athletics/campus-map.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.hotspot {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #0871d4;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hotspot:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(8,113,212,0.6);
+}
+
+.hotspot-content {
+    position: absolute;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hotspot:hover .hotspot-content {
+    opacity: 1;
+}
+
+/* Sports Gallery */
+.sports-gallery {
+    padding: 40px 0;
+    background: #f5f5f5;
+}
+
+.gallery-filters {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 25px;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+    background: #0871d4;
+    color: white;
+}
+
+.athletics-gallery-slider {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.athletics-slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item {
+    flex: 0 0 300px;
+    margin: 0 15px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .image-caption {
+    transform: translateY(0);
+}
+
+.athletics-slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 20px 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.athletics-slider-nav.prev {
+    left: 0;
+}
+
+.athletics-slider-nav.next {
+    right: 0;
+}
+
+/* Animations */
+@keyframes titleFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+ 

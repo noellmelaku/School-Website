@@ -1,0 +1,278 @@
+
+  <!-- Header -->
+  <!DOCTYPE html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>About SIS</title>
+    
+      <link href="https://db.onlinewebfonts.com/c/5cfbe76f00e7c4d6ba5d963f6c179606?family=Museo+W01+700" rel="stylesheet">  <!-- Link for the font Museo -->
+      <link href="styles.css" rel="stylesheet" type="text/css" /> <!-- Link for custom styles -->
+    </head>
+  <body>
+      
+                      <!-- Nav Bar-->
+  <header class="navigationBar">
+      <a href="HomePage.html"><img src="Images/Logo.png" alt="Sandford Logo" class="logo"></a>
+      <nav>
+        <ul class="navLinks">
+          <li><a href="HomePage.html">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Admissions</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="ctaButton">Contact Us</a>
+    </header>
+  
+      <!-- Squiggly Wave -->
+    <title>Wave</title>
+  <body>
+      <div class="squiggly-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+          <path d="M0,50 
+                   C90,0 180,100 270,50 
+                   C360,0 450,100 540,50 
+                   C630,0 720,100 810,50 
+                   C900,0 990,100 1080,50 
+                   C1170,0 1260,100 1350,50 
+                   C1440,0 1530,100 1620,50 
+                   L1440,100 L0,100 Z" 
+                fill=#0871d4></path>
+        </svg>
+      </div>
+    </body>
+  
+  
+
+
+<!-- Athletics Hero Section -->
+<!-- Hero Section with Video Background -->
+<div class="athletics-hero">
+  <video class="hero-video" autoplay loop muted playsinline>
+      <source src="Images/Athletics/hero-background.mp4" type="video/mp4">
+  </video>
+  
+  <h1 class="animated-title">Excellence in Athletics</h1>
+  
+  <div class="trophy-counter">
+      <span>Championship Trophies:</span>
+      <span class="count" data-target="1">0</span>
+  </div>
+</div>
+
+
+<!-- Sports Programs Section -->
+<section class="sports-programs">
+  <h2>Our Sports Programs</h2>
+  <div class="sports-grid">
+      <div class="sport-card">
+          <img src="Images/Athletics/football-field.jpg" alt="Football Field">
+          <h3>Football</h3>
+          <p>Our championship-winning football program includes junior and senior teams...</p>
+      </div>
+      <div class="sport-card">
+          <img src="Images/Athletics/basketball-court.jpg" alt="Basketball Court">
+          <h3>Basketball</h3>
+          <p>State-of-the-art indoor basketball courts hosting our talented teams...</p>
+      </div>
+      <!-- Add similar cards for volleyball, tennis, badminton -->
+  </div>
+</section>
+
+<!-- Facilities Section -->
+<section class="facilities">
+  <h2>Athletic Facilities</h2>
+  <div class="facilities-slider">
+      <!-- Add image slider/gallery of sports grounds -->
+      <img src="Images/Athletics/main-field.jpg" alt="Main Football Field">
+      <img src="Images/Athletics/indoor-court.jpg" alt="Indoor Sports Complex">
+      <!-- Add more facility images -->
+  </div>
+</section>
+
+<!-- ISSAAA Section -->
+<section class="issaaa">
+    <h2>ISSAAA Champions</h2>
+    <div class="issaaa-content">
+        <div class="trophy-showcase">
+            <img src="Images/Athletics/trophy.jpg" alt="ISSAAA Championship Trophy">
+            <h3>Current Title Holders</h3>
+        </div>
+        <div class="issaaa-info">
+            <h3>About ISSAAA</h3>
+            <p>The International Schools Sports Association of Addis Ababa (ISSAAA) is...</p>
+            <h3>Our Achievement History</h3>
+            <ul>
+                <li>2023 - Overall Champions</li>
+                <!-- Add more achievements -->
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Coaching Staff Section -->
+<section class="coaching-staff">
+    <h2>Our Athletic Staff</h2>
+    <div class="staff-grid">
+        <div class="staff-card">
+            <img src="Images/Athletics/coach1.jpg" alt="Head Coach">
+            <h3>Coach Name</h3>
+            <p>Football Head Coach</p>
+            <p>Experience and achievements...</p>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+<script src="athletics.js"></script>
+
+
+    <!-- Sports Gallery Section -->
+<section class="sports-gallery">
+  <h2>Sports Gallery</h2>
+  
+  <!-- Year Filter -->
+  <div class="gallery-filters">
+      <button class="filter-btn active" data-year="all">All Years</button>
+      <button class="filter-btn" data-year="2023">2023</button>
+      <button class="filter-btn" data-year="2022">2022</button>
+      <button class="filter-btn" data-year="2021">2021</button>
+      <button class="filter-btn" data-year="2020">2020</button>
+  </div>
+
+  <!-- Slider Container -->
+  <div class="gallery-slider">
+      <div class="athletics-slider-wrapper">
+          <!-- Example gallery items - replicate for your images -->
+          <div class="gallery-item" data-year="2023">
+              <img src="Images/Gallery/football-match-2023.jpg" alt="Football Match 2023" data-lightbox="sports">
+              <div class="image-caption">
+                  <h4>ISSAAA Football Finals</h4>
+                  <p>Championship match against ICS - 2023</p>
+              </div>
+          </div>
+          <img src="Images/Athletics/ ">
+      </div>
+      
+      <!-- Navigation Arrows -->
+      <button class="athletics-slider-nav prev">❮</button>
+      <button class="athletics-slider-nav next">❯</button>
+  </div>
+</section>
+
+
+  
+  
+  
+<script>
+  // Gallery Functionality
+  document.addEventListener('DOMContentLoaded', function() {
+      const sliderWrapper = document.querySelector('.slider-wrapper');
+      const prevButton = document.querySelector('.slider-nav.prev');
+      const nextButton = document.querySelector('.slider-nav.next');
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      let currentPosition = 0;
+  
+      // Slider Navigation
+      nextButton.addEventListener('click', () => {
+          currentPosition -= 330;
+          if (currentPosition < -(sliderWrapper.scrollWidth - window.innerWidth)) {
+              currentPosition = 0;
+          }
+          sliderWrapper.style.transform = `translateX(${currentPosition}px)`;
+      });
+  
+      prevButton.addEventListener('click', () => {
+          currentPosition += 330;
+          if (currentPosition > 0) {
+              currentPosition = -(sliderWrapper.scrollWidth - window.innerWidth);
+          }
+          sliderWrapper.style.transform = `translateX(${currentPosition}px)`;
+      });
+  
+      // Year Filtering
+      filterButtons.forEach(button => {
+          button.addEventListener('click', () => {
+              const year = button.getAttribute('data-year');
+              
+              // Update active button
+              filterButtons.forEach(btn => btn.classList.remove('active'));
+              button.classList.add('active');
+              
+              // Filter gallery items
+              const items = document.querySelectorAll('.gallery-item');
+              items.forEach(item => {
+                  if (year === 'all' || item.getAttribute('data-year') === year) {
+                      item.style.display = 'block';
+                  } else {
+                      item.style.display = 'none';
+                  }
+              });
+              
+              // Reset position
+              currentPosition = 0;
+              sliderWrapper.style.transform = `translateX(0)`;
+          });
+      });
+  
+      // Lightbox functionality
+      const galleryItems = document.querySelectorAll('.gallery-item img');
+      galleryItems.forEach(item => {
+          item.addEventListener('click', () => {
+              const lightbox = document.createElement('div');
+              lightbox.className = 'lightbox';
+              lightbox.innerHTML = `
+                  <div class="lightbox-content">
+                      <img src="${item.src}" alt="${item.alt}">
+                      <button class="lightbox-close">×</button>
+                  </div>
+              `;
+              document.body.appendChild(lightbox);
+              
+              lightbox.querySelector('.lightbox-close').addEventListener('click', () => {
+                  lightbox.remove();
+              });
+          });
+      });
+  });
+  </script>
+  
+  <img class="waveDesign" src="Images/waveDesign 2.png" alt="Wave Design" draggable="false">
+  
+  
+    <!-- Footer -->
+    <section>   
+  
+      <div class="footer">
+    
+        <div class="footerImgs">
+          <a href="https://aisa.or.ke/" target="_blank"><img src="Images/Footer/AISA Logo.png" draggable="false"></a>
+          <a href="https://www.dofe.org/" target="_blank"><img src="Images/Footer/Duke of edinbrugh Logo.png" draggable="false"></a>
+          <a href="https://www.ibo.org/" target="_blank"><img src="Images/Footer/IB logo.png" draggable="false"></a>
+          <a href="https://www.cam.ac.uk/" target="_blank"><img src="Images/Footer/Cambridge Logo.png" draggable="false"></a>
+          
+    
+        </div>
+    
+        <div class="footerDesc">
+          <img class="footerLogo" src="Images/Footer/Full Logo.png" alt="SIS logo" draggable="false">
+            <div class="footerItem">
+              <img src="Images/Footer/Phone logo.png" alt=img draggable="false"><p>+25111233892</p>
+            </div>
+              <div class="footerItem">
+              <img src="Images/Footer/email logo.png" alt="img" draggable="false"><p>admission@sandfordschool.org</p>
+            </div>
+            <div class="footerItem">
+              <img src="Images/Footer/location logo.png" alt="img" draggable="false"><a href="https://goo.gl/maps/nZ29XxooSHrHufnQ9"><p>Shewareged Gedle St, Addis Ababa, Ethiopia.</p></a>
+            </div>
+            </div>
+      </div>
+    
+      
+      <div class="footerLinks">
+        </div>
+    
+    </section>
+
+

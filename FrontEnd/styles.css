@@ -304,12 +304,20 @@ html {
     color:white;
     text-decoration: none;
 }
-.Sports, .Arts, .Primary, .Secondary {
+.Sports, .Arts, .Primary {
     position: relative;
     z-index: 3;
     top: -500px;
     height: 500px;
     background-color: #00000099;
+}
+.Secondary {
+    position: relative;
+    z-index: 3;
+    top:-500px;
+    height: 500px;
+    width: 75%;
+    background-color: #00000099;  
 }
 .design {
     width:30%;
@@ -727,27 +735,28 @@ body html {
   background-color: #ffff;
   color: rgb(0, 0, 0);
   padding: 15px;
-  width: 250px;
+  height: 200px;
+  width: 350px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease;
 }
 .card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-20px);
 }
 .card h3 {
-  font-size: 1.2rem;
+  font-size: 2rem;
   margin-bottom: 10px;
 }
 .card p {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   margin-bottom: 15px;
 }
 .card .ctaButton {
-  background-color: #ff6a00;
+  background-color: #0571d3;
   color: white;
-  font-size: 0.9rem;
+  font-size:1.1rem;
   text-decoration: none;
   padding: 8px 15px;
   border-radius: 5px;
@@ -755,7 +764,7 @@ body html {
   display: inline-block;
 }
 .card .ctaButton:hover {
-  background-color: #d75a00;
+  background-color: #0571d3;
 }
 
 
@@ -1511,3 +1520,26 @@ body html {
     50% { transform: translateY(-10px); }
 }
  
+/* SECONDARY SCHOOL PAGE */
+.SecondaryHeroImage {
+    width: 100%;
+    height: au;
+    object-fit: cover;
+    margin-top:-35px;   
+    z-index:5;
+}
+.SecondaryText h2 {
+    font-family: "Museo 700";
+    font-size: 3rem;
+    text-align:center;
+}
+ 
+/* Notes to Self
+Add buttons to the website and use more images 
+Create more sections and add a footer
+Link it to the IB Section
+Separate it into Sports and Studies
+Fix the image with raees 
+Add a border at the bottom of the image 
+*/ 
+

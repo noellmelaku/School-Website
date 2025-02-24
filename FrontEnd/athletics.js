@@ -56,3 +56,5 @@ function autoScroll() {
     carousel.scrollTo(scrollPosition, 0);
     requestAnimationFrame(autoScroll);
 }
+
+autoScroll();

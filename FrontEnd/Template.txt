@@ -1,14 +1,16 @@
 
-  <!-- Header -->
 <!DOCTYPE html>
+<html class="smooth-scroll-wrapper">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About SIS</title>
-  
-    <link href="https://db.onlinewebfonts.com/c/5cfbe76f00e7c4d6ba5d963f6c179606?family=Museo+W01+700" rel="stylesheet">  <!-- Link for the font Museo -->
-    <link href="styles.css" rel="stylesheet" type="text/css" /> <!-- Link for custom styles -->
-  </head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandford School</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://db.onlinewebfonts.com/c/5cfbe76f00e7c4d6ba5d963f6c179606?family=Museo+W01+700" rel="stylesheet">  <!-- Link for the font Museo -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="styles.css" rel="stylesheet" type="text/css" /> <!-- Link for custom styles -->
+</head>
 <body>
     
                     <!-- Nav Bar-->

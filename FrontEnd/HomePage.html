@@ -5,20 +5,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sandford School</title>
-
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://db.onlinewebfonts.com/c/5cfbe76f00e7c4d6ba5d963f6c179606?family=Museo+W01+700" rel="stylesheet">  <!-- Link for the font Museo -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="styles.css" rel="stylesheet" type="text/css" /> <!-- Link for custom styles -->
 </head>
 <body>
   <section class="content">
-
-
     <!-- First Section -->
-     
     <div class="first-page">
       <div class="slider-wrapper">
         <div class="slider">
-          <img id="slide-1" src="Images/slide/UN day photo.jpeg" alt="UN-day-photo" draggable="false">
+          <img id="slide-1" src="Images/Slide/UN day photo.jpeg" alt="UN-day-photo" draggable="false">
           <img id="slide-2" src="Images/slide/JEF_0966.jpg" alt="Early-years" draggable="false">
           <img id="slide-3" src="Images/slide/JEF_9617.jpg" alt="Fete-djs" draggable="false">
           <img id="slide-4" src="Images/slide/JEF_9351.JPG" alt="Graduate-students" draggable="false">
@@ -46,16 +44,21 @@
       <div class="school-name">
         <b>SANDFORD INTERNATIONAL SCHOOL</b>
       </div>
+      
+      <div class="scroll-indicator">
+        <i class="fas fa-chevron-down fa-2x"></i>
+        <p>Scroll to explore</p>
+      </div>
     </div>
   </section>
 
   <!-- Second Section -->
-  <section>
+  <section class="welcomeSection">
     <div class="welcome">
       <h1>A gracefully Diverse Learning Environment</h1>
       <div class="blockS2"></div>
-             <p>Embraces Challenge</p>
-        <p>Motivates Personal Development</p>
+      <p>Embraces Challenge</p>
+      <p>Motivates Personal Development</p>
       <p>Encourages A thirst for knowledge</p>
     </div>
   </section>
@@ -64,7 +67,7 @@
   <section class="secondSection">
     <div class="S3container">
       <a href="Students.html">
-        <div class="S3box students-box"> <!-- Added class "students-box" -->
+        <div class="S3box students-box">
           <div class="designElement">
             <img src="Images/Third Section/3.png" draggable="false">
           </div>
@@ -75,9 +78,9 @@
           </div>
         </div>
       </a>
-  
+
       <a href="Community.html">
-        <div class="S3box community-box"> <!-- Added class "community-box" -->
+        <div class="S3box community-box">
           <div class="designElement">
             <img src="Images/Third Section/2.png" draggable="false">
           </div>
@@ -88,9 +91,9 @@
           </div>
         </div>
       </a>
-  
+
       <a href="Curriculum.html">
-        <div class="S3box curriculum-box"> <!-- Added class "curriculum-box" -->
+        <div class="S3box curriculum-box">
           <div class="designElement">
             <img src="Images/Third Section/1.png" draggable="false">
           </div>
@@ -103,22 +106,20 @@
       </a>
     </div>
   </section>
-  
+
   <!-- Fourth Section -->
-   
   <section class="thirdSection">
     <div class="imageContainer">
       <a href="Athletics.html">
-      <img src="Images/Four box section/JEF_0572.jpg" alt="Basketball" draggable="false">
-      <div class="Sports ani">
-        <h3>Sports</h3>
-        <div class="design"></div>
-        <p>At our school, we believe playing sports is vital for the development of teamwork and social skills. We have a wide range of sports programs for our students that are aimed at raising the participation level of all possible categories of learners. Our students are divided into four house groups which allows for fun during competitions within them alongside providing more opportunities to get involved.</p>
-      </div>
-    </a>
+        <img src="Images/Four box section/JEF_0572.jpg" alt="Basketball" draggable="false">
+        <div class="Sports ani">
+          <h3>Sports</h3>
+          <div class="design"></div>
+          <p>At our school, we believe playing sports is vital for the development of teamwork and social skills. We have a wide range of sports programs for our students that are aimed at raising the participation level of all possible categories of learners. Our students are divided into four house groups which allows for fun during competitions within them alongside providing more opportunities to get involved.</p>
+        </div>
+      </a>
     </div>
-
-
+    
     <div class="imageContainer">
       <img src="Images/Four box section/JEF_0851.JPG" alt="IB graduates" draggable="false">
       <div class="Arts ani">
@@ -129,7 +130,7 @@
     </div>
 
     <div class="imageContainer">
-      <a href="Students.html#primarySchoolSection"> 
+      <a href="Students.html#primarySchoolSection">
         <img src="Images/Four box section/JEF_9454.JPG" alt="Primary" draggable="false">
         <div class="Primary ani">
           <h3>Primary School</h3>
@@ -139,107 +140,184 @@
       </a>
     </div>
     
-
     <div class="imageContainer">
       <img src="Images/Four box section/JEF_9344.JPG" alt="Secondary" draggable="false">
       <div class="Secondary ani">
         <h3>Secondary School</h3>
         <div class="design"></div>
-        <p>At our SIS, we offer IGCSE and IB curriculum for the pupils of this community. We hire experienced and dedicated teachers who allow our students to excel in their preferred subject. We also offer exciting events where our students have the opportunity to travel to other countries and broaden their horizons. </p>
+        <p>At SIS, we offer IGCSE and IB curriculum for the pupils of this community. We hire experienced and dedicated teachers who allow our students to excel in their preferred subject. We also offer exciting events where our students have the opportunity to travel to other countries and broaden their horizons.</p>
       </div>
     </div>
   </section>
-
-  
 
   <!-- Fifth Section -->
   <p class="origin-title">
     <b>Origins of SIS</b>
-</p>
-<div class="column-container">
+  </p>
+
+  <div class="originLineContainer">
+    <div class="originLine"></div>
+  </div>
+
+  <div class="column-container">
     <div class="column">
-        <img src="Images/Origins Section/JEF_9556.JPG" alt="Picture of school">
-        <p>Sandford International School’s roots can be traced back to the early 1940s when Christine Sandford wanted to start an English language school for her children. She is the wife of Colonel Sandford who worked as Head of the British Military Mission to Ethiopia during World War II; she also played an essential part together with Cunningham and Wingate in helping Emperor Haile Selassie I and the soldiers of Ethiopia regain its independence from Italian occupation under Mussolini regime. Due to his fascination for Ethiopia, Colonel Sandford moved there together with his wife and children. During the seventies, the Sandford’s were close associates of the Emperor and the new government, hence they were allocated land which they could cultivate as well start a school.</p>
+      <img src="Images/Origins Section/JEF_9556.JPG" alt="Picture of school">
+      <p>Sandford International School's roots can be traced back to the early 1940s when Christine Sandford wanted to start an English language school for her children. She is the wife of Colonel Sandford who worked as Head of the British Military Mission to Ethiopia during World War II; she also played an essential part together with Cunningham and Wingate in helping Emperor Haile Selassie I and the soldiers of Ethiopia regain its independence from Italian occupation under Mussolini regime. Due to his fascination for Ethiopia, Colonel Sandford moved there together with his wife and children. During the seventies, the Sandford's were close associates of the Emperor and the new government, hence they were allocated land which they could cultivate as well start a school.</p>
     </div>
     <div class="column">
       <p>Initially this school was named Sandford English Community School and has grown rapidly. It happened so because the founders wanted to reside in Ethiopia and teach their children together with Ethiopians. Sandford English Community School began accepting Ethiopian learners due to a deal with the Imperial Government thereby making it easy for these pupils to enroll by offering low additional costs which include those of the Royal Family among others.</p>
       <p>By 1949, with the support of the Emperor and the school community, Sandford English Community School relocated to its current site.</p>
-      <p>The school’s role has been unique in Ethiopia and Africa, standing as one of the earliest international schools on the continent, catering to both nationals and expatriates on equal footing.</p>  
-      <p>In 2001, Sandford English Community School rebranded as “Sandford International School” and introduced the International Baccalaureate programme. The school underwent structural reorganization into three sections: Primary School (Nursery to Year 6), Secondary School (Year 7 to Year 13), and Adult Evening School. Public examinations include Ethiopian National Examinations at Year 8 and Year 10, IGCSE at Year 11, and the International Baccalaureate at Year 13.</p>
+      <p>The school's role has been unique in Ethiopia and Africa, standing as one of the earliest international schools on the continent, catering to both nationals and expatriates on equal footing.</p>
+      <p>In 2001, Sandford English Community School rebranded as "Sandford International School" and introduced the International Baccalaureate programme. The school underwent structural reorganization into three sections: Primary School (Nursery to Year 6), Secondary School (Year 7 to Year 13), and Adult Evening School. Public examinations include Ethiopian National Examinations at Year 8 and Year 10, IGCSE at Year 11, and the International Baccalaureate at Year 13.</p>
+      <div class="learnMore">
+        <a href="History.html">Learn More</a>
+      </div>
+    </div>
   </div>
-</div>
 
-    
-    <img class="waveDesignV" src="Images/waveDesign.png"  width=100% alt="Wave Design" draggable="false">
+  </section>
+
+  <!-- Footer -->
+  <img class="waveDesign" src="Images/waveDesign.png" alt="Wave Design" draggable="false">
+
+
+
+  <!-- Footer -->
+  <section>
+
+    <div class="footer">
   
+      <div class="footerImgs">
+        <a href="https://aisa.or.ke/" target="_blank"><img src="Images/Footer/AISA Logo.png" draggable="false"></a>
+        <a href="https://www.dofe.org/" target="_blank"><img src="Images/Footer/Duke of edinbrugh Logo.png" draggable="false"></a>
+        <a href="https://www.ibo.org/" target="_blank"><img src="Images/Footer/IB logo.png" draggable="false"></a>
+        <a href="https://www.cam.ac.uk/" target="_blank"><img src="Images/Footer/Cambridge Logo.png" draggable="false"></a>
+        
+  
+      </div>
+  
+      <div class="footerDesc">
+        <img class="footerLogo" src="Images/Footer/Full Logo.png" alt="SIS logo" draggable="false">
+          <div class="footerItem">
+            <img src="Images/Footer/Phone logo.png" alt=img draggable="false"><p>+25111233892</p>
+          </div>
+            <div class="footerItem">
+            <img src="Images/Footer/email logo.png" alt="img" draggable="false"><p>admission@sandfordschool.org</p>
+          </div>
+          <div class="footerItem">
+            <img src="Images/Footer/location logo.png" alt="img" draggable="false"><a href="https://goo.gl/maps/nZ29XxooSHrHufnQ9"><p>Shewareged Gedle St, Addis Ababa, Ethiopia.</p></a>
+          </div>
+          </div>
+    </div>
   
   </section>
 
-    <!-- Footer -->
-    <section>
+  <!-- Back to top button -->
+  <div class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
 
-      <div class="footer">
-    
-        <div class="footerImgs">
-          <a href="https://aisa.or.ke/" target="_blank"><img src="Images/Footer/AISA Logo.png" draggable="false"></a>
-          <a href="https://www.dofe.org/" target="_blank"><img src="Images/Footer/Duke of edinbrugh Logo.png" draggable="false"></a>
-          <a href="https://www.ibo.org/" target="_blank"><img src="Images/Footer/IB logo.png" draggable="false"></a>
-          <a href="https://www.cam.ac.uk/" target="_blank"><img src="Images/Footer/Cambridge Logo.png" draggable="false"></a>
-          
-        </div>
-    
-        <div class="footerDesc">
-          <img class="footerLogo" src="Images/Footer/Full Logo.png" alt="SIS logo" draggable="false">
-            <div class="footerItem">
-              <img src="Images/Footer/Phone logo.png" alt=img draggable="false"><p>+25111233892</p>
-            </div>
-              <div class="footerItem">
-              <img src="Images/Footer/email logo.png" alt="img" draggable="false"><p>admission@sandfordschool.org</p>
-            </div>
-            <div class="footerItem">
-              <img src="Images/Footer/location logo.png" alt="img" draggable="false"><a href="https://goo.gl/maps/nZ29XxooSHrHufnQ9"><p>Shewareged Gedle St, Addis Ababa, Ethiopia.</p></a>
-            </div>
-            </div>
-      </div>
-    
+  <!-- JAVASCRIPT -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Back to top button
+      const backToTopButton = document.querySelector('.back-to-top');
       
-      <div class="footerLinks">
-        </div>
-    
-    </section>
-
-                              <!-- JAVASCRIPT -->
-
-    <script>
-      const html = document.content;  // Target the <html> element
-      const body = document.body;             // Target the <body> element
-      const scrollSpeed = 0.1;
-      let offset = 0;
-    
-      // Set body's height based on the content's height
-      function setBodyHeight() {
-          const contentHeight = body.scrollHeight; // Get total height of the content
-          html.style.height = `${contentHeight}px`; // Set height on the <html> element
+      window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+          backToTopButton.classList.add('visible');
+        } else {
+          backToTopButton.classList.remove('visible');
+        }
+      });
+      
+      backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+      
+      // Scroll indicator animation
+      const scrollIndicator = document.querySelector('.scroll-indicator');
+      
+      window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 100) {
+          scrollIndicator.style.opacity = '0';
+          scrollIndicator.style.visibility = 'hidden';
+        } else {
+          scrollIndicator.style.opacity = '1';
+          scrollIndicator.style.visibility = 'visible';
+        }
+      });
+      
+      // Smooth hover effects
+      const elements = document.querySelectorAll('.S3box, .imageContainer, .column img, .footerItem, .footerImgs img, .footerLogo, .vertical-header li, .vertical-header img, .school-name');
+      
+      elements.forEach(element => {
+        element.addEventListener('mouseenter', () => {
+          element.style.transition = 'all 0.3s ease';
+        });
+        
+        element.addEventListener('mouseleave', () => {
+          element.style.transition = 'all 0.3s ease';
+        });
+      });
+      
+      // Auto-scrolling slider
+      const slider = document.querySelector('.slider');
+      const slides = document.querySelectorAll('.slider img');
+      let currentSlide = 0;
+      
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        slider.scrollTo({
+          left: currentSlide * window.innerWidth,
+          behavior: 'smooth'
+        });
       }
-    
-      // Smooth scroll function
-      function smoothScroll() {
-          offset += (window.pageYOffset - offset) * scrollSpeed;
-          html.style.transform = `translateY(-${offset}px) translateZ(0)`; // Apply transform on <html>
-          requestAnimationFrame(smoothScroll);
-      }
-    
-      // Initial call to set body height
-      setBodyHeight();
-    
-      // Recalculate on resize
-      window.addEventListener("resize", setBodyHeight);
-    
-      // Start the smooth scroll loop
-      smoothScroll();
-    </script>
-    
+      
+      // Auto-scroll every 5 seconds
+      setInterval(nextSlide, 5000);
+      
+      // Pause auto-scroll on hover
+      slider.addEventListener('mouseenter', () => {
+        clearInterval(slideInterval);
+      });
+      
+      slider.addEventListener('mouseleave', () => {
+        slideInterval = setInterval(nextSlide, 5000);
+      });
+      
+      let slideInterval = setInterval(nextSlide, 5000);
+      
+      // Update slider nav indicators
+      slider.addEventListener('scroll', () => {
+        const slideWidth = slider.clientWidth;
+        const scrollPosition = slider.scrollLeft;
+        currentSlide = Math.round(scrollPosition / slideWidth);
+        
+        const navLinks = document.querySelectorAll('.slider-nav a');
+        navLinks.forEach((link, index) => {
+          if (index === currentSlide) {
+            link.style.backgroundColor = 'hsla(0, 0%, 100%, 0.9)';
+            link.style.transform = 'scale(1.3)';
+          } else {
+            link.style.backgroundColor = 'hsla(0, 0%, 100%, 0.5)';
+            link.style.transform = 'scale(1)';
+          }
+        });
+      });
+    });
+  </script>
 
-  </body>
+</body>
+</html>
 
-  </html>
+
+
+
+
+
+
+
